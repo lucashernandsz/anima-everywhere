@@ -1,0 +1,33 @@
+{
+  "name": "anima-everywhere",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "setup:tools": "node scripts/setup-tools.mjs",
+    "server": "node server/index.mjs",
+    "build": "tsc -b && vite build",
+    "check": "tsc -b",
+    "preview": "vite preview",
+    "test": "playwright test",
+    "test:server": "node --test tests-server/*.test.mjs"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.0",
+    "@fontsource/zilla-slab": "^5.2.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  }
+}
